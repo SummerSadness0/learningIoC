@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id = "teacherzhang" class = "notice.entity.Teacher">
+            <property name = "name" value = "zhanglaoshi"></property>
+        </bean>
+    <bean id = "teacherwang" class = "notice.entity.Teacher">
+        <property name = "name" value = "wanglaoshi"></property>
+    </bean>
+    <bean id = "teacherli" class = "notice.entity.Teacher">
+        <property name = "name" value = "lilaoshi"></property>
+    </bean>
+    <bean id = "emailNoticeZhang" class = "notice.EmailNotice">
+        <property name = "message" value = "8:00上语文课"></property>
+    </bean>
+    <bean id = "phoneNoticeWang" class = "notice.PhoneNotice">
+        <property name = "message" value = "11:00上数学课"></property>
+    </bean>
+    <bean id = "phoneNoticeLi" class = "notice.PhoneNotice">
+        <property name = "message" value = "15:00上英语课"></property>
+    </bean>
+</beans>
